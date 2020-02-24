@@ -10,6 +10,7 @@ $(document).ready(function(){
 
   //reading users choice
 	document.getElementById('submit').addEventListener('click', function(){
+  $('.homeImage').hide();
 	endPoint = document.getElementById('endpoints').value;
   country= document.getElementById('countries').value;
 
@@ -72,6 +73,7 @@ $(document).ready(function(){
 
   $('#about').click(function(){
     $('.selects').hide();
+    $('.homeImage').hide();
     document.getElementById('result').innerHTML = '';
         document.getElementById('result').innerHTML +=
     '<div class="row mt-5 text-center">' +
@@ -88,13 +90,15 @@ $(document).ready(function(){
           '</div>' +
         '</figure>' +
       '</div>' +
-    '</div>';
+    '</div>' +
+    '<img src="images/me.jpg" class="w-50 border border-warning" alt="dp">';
 
   });   // About ends
 
   $('#news').click(function(){
     document.getElementById('result').innerHTML = '';
     $('.selects').show();
+    // $('.homeImage').hide();
   });  // News tab hide/show ends here
 
 });  //Ends Document.ready function
