@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>VandyFA3.1</title>
+  </head>
+  <body class="container">
+    <h1 class="text-center text-info jumbotron myColor">News-API</h1>
+    <!-- <img class="w-25 m-5" src="images/p.png" alt="p"> -->
+
+    <ul class="nav nav-tabs justify-content-center">
+      <li id="about" class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li id="news" class="nav-item">
+        <a class="nav-link" href="#">News</a>
+      </li>
+    </ul>
+
+    <!-- endpoints -->
+    <div class="row selects">
+    <select id="endpoints" class="col mt-3 mb-3 bg-success text-white" name="endpoints">
+      <option value="choose">Choose endpoints</option>
+      <option value="top">Top Headlines</option>
+      <option value="everything">Everything</option> -->
+      <option value="sources">Sources</option>
+    </select>
+
+
+
+    <!-- Categories -->
+    <!-- <div class="row">
+     <select id="categories" class="col mt-3 mb-3 ml-2 bg-success text-white" name="categories">
+      <option value="choose">Choose the Categories</option>
+      <option value="general">General</option>
+      <option value="business">Business</option>
+      <option value="technology">Technology</option>
+      <option value="entertainment">Entertainment</option>
+      <option value="science">Science</option>
+      <option value="sports">Sports</option>
+      <option value="health">Health</option>
+    </select> -->
+
+    <!-- Country -->
+    <select id="countries" class="col mt-3 mb-3 ml-2 bg-success text-white" name="countries">
+      <option value="choose">Choose Countries</option>
+      <option value="us">United States</option>
+      <option value="canada">Canada</option>
+      <option value="aus">Australia</option>
+    </select>
+
+    <!-- Sources -->
+    <!-- <select id="sources" class="col mt-3 mb-3 ml-2 bg-success text-white" name="country">
+      <option value="choose">Choose Sources</option>
+      <option value="us">A</option>
+      <option value="canada">B</option>
+      <option value="aus">C</option>
+    </select> -->
+
+    <button id="submit" type="button" class="col mt-3 mb-3 ml-2 btn btn-secondary btn-md text-light border border-light">Search</button>
+  </div>
+
+    <!-- Result container  -->
+    <div class="row" id="result"></div>
+
+
+
+    <!-- Scripts -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/config.json"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
