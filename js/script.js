@@ -18,14 +18,14 @@ $(document).ready(function(){
 	  displayData(endPoint, country);
   });
 
-  function displayData(ep, count){
-  if (count === 'us') {
-  var url = `http://newsapi.org/v2/top-headlines?country=us&apiKey=${myKey}`;
-} else if (count === 'canada')   {
-   var url =  `http://newsapi.org/v2/top-headlines?country=ca&apiKey=${myKey}`;
- } else if (count === 'au') {
-    var url =  `http://newsapi.org/v2/top-headlines?country=au&apiKey=${myKey}`;
-  }
+      function displayData(ep, count){
+      if (count === 'us') {
+      var url = `http://newsapi.org/v2/top-headlines?country=us&apiKey=${myKey}`;
+    } else if (count === 'canada')   {
+       var url =  `http://newsapi.org/v2/top-headlines?country=ca&apiKey=${myKey}`;
+     } else if (count === 'au') {
+        var url =  `http://newsapi.org/v2/top-headlines?country=au&apiKey=${myKey}`;
+      }
   //console.log(ep, count, url);
 
   $.ajax({
