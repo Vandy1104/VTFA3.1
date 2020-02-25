@@ -4,7 +4,7 @@ $(document).ready(function(){
 
   // accessing key from json file
   var myKey = JSON.parse(apiKey);
-  console.log(myKey[0]);
+  //console.log(myKey[0]);
   myKey = myKey[0].key;
 
 
@@ -34,7 +34,7 @@ $(document).ready(function(){
     		type :'GET',
     		data :'json',
     		success:function(data){
-    			//console.log(data);
+    			console.log(data);
           // console.log(data.photos[0].img_src);
 
           var i;
